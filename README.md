@@ -36,6 +36,16 @@
 * `Testing` is facilitated
 
 
+## `Layers of clean architecture`
+* `Presentation Layer` contains the UI that we present to the user.
+* `Data Layer` contains everything relevant to the data. Things like API, Local-database, Shared-Prefs.
+* `Domain Layer` is like a connecting layer, It contains the business rules like filtering a collection and also it contains definitions for repository. It also contains the model classes like entities.
+
+## `Folder Structure`
+
+`Login` |
+--- |
+<img src="https://github.com/devrath/NoteApp/blob/main/Assets/FolderStructure.png" /> |
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
 If you feel like support me a coffee for my efforts, I would greatly appreciate it.</br>
