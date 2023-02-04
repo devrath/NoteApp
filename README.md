@@ -41,11 +41,51 @@
 * `Data Layer` contains everything relevant to the data. Things like API, Local-database, Shared-Prefs.
 * `Domain Layer` is like a connecting layer, It contains the business rules like filtering a collection and also it contains definitions for repository. It also contains the model classes like entities.
 
-## `Folder Structure`
 
-`Login` |
---- |
-<img src="https://github.com/devrath/NoteApp/blob/main/Assets/FolderStructure.png" width="390" height="460" /> |
+## **`𝙿𝚊𝚌𝚔𝚊𝚐𝚎 𝚂𝚝𝚛𝚞𝚌𝚝𝚞𝚛𝚎 𝚒𝚗 𝚝𝚑𝚎 𝚙𝚛𝚘𝚓𝚎𝚌𝚝`** :package:
+
+    Project Folder                                    
+    .
+    ├── app                                           
+    |   |
+    │   ├──> DI   
+    |   |
+    │   |──> Feature
+    |   |    |
+    |   |    |──-------------> Data
+    |   |    |                  |
+    |   |    |                  |──-------------> DataSource
+    |   |    |                  |    
+    |   |    |                  └──-------------> Repository 
+    |   |    |
+    |   |    |──-------------> Domain
+    |   |    |                  |
+    |   |    |                  |──-------------> Model
+    |   |    |                  |
+    |   |    |                  |──-------------> RepositoryDefinition
+    |   |    |                  |
+    |   |    |                  |──-------------> UseCase
+    |   |    |                  |
+    |   |    |                  └──-------------> Util 
+    |   |    |
+    |   |    └──-------------> Presentation 
+    |   |                       |
+    |   |                       |──-------------> Screen1
+    |   |                       |                 |  
+    |   |                       |                 |
+    |   |                       |                 └──-------------> Components 
+    |   |                       |
+    |   |                       └──-------------------------------> MainActivity 
+    |   |                       
+    |   |──> UI
+    |   |    |
+    |   |    └──--------------------------------------------------> Theme 
+    |   |
+    │   └──-------------------------------------------------------> ApplicationClass                
+    
+
+
+
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
 If you feel like support me a coffee for my efforts, I would greatly appreciate it.</br>
