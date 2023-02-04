@@ -6,6 +6,19 @@ Creating notes and caching data which supports CRUD operations with architecture
 
 
 
+## `𝚆𝚑𝚊𝚝 𝚒𝚜 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
+* Its a way to organize the project to achieve `maintainability` and `scalability`.
+* Having one concern per component -> Meaning each piece of our architecture does only one thing and nothing else. If one component is doing more than one thing, we need to split them 
+* It is structured layered dependency. It is not specific to mobile development instead its software development architecture.
+
+## `𝙰𝚍𝚟𝚊𝚗𝚝𝚊𝚐𝚎𝚜 𝚘𝚏 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
+* `Strict architecture` so its not easy to make mistakes.
+* `Business logic is encapsulated` so its to use and test.
+* `Parallel` development.
+* `Highly scalable` so we can grow a small project into a large one without bumping into problems.
+* `Easy` to understand and maintain.
+* `Testing` is facilitated
+
 
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
