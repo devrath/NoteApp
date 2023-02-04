@@ -45,7 +45,7 @@
 
 `Login` |
 --- |
-<img src="https://github.com/devrath/NoteApp/blob/main/Assets/FolderStructure.png" /> |
+<img src="https://github.com/devrath/NoteApp/blob/main/Assets/FolderStructure.png" width="390" height="460" /> |
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
 If you feel like support me a coffee for my efforts, I would greatly appreciate it.</br>
