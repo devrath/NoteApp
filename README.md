@@ -16,10 +16,16 @@
 
 
 
+
+
 ## `𝚆𝚑𝚊𝚝 𝚒𝚜 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
 * Its a way to organize the project to achieve `maintainability` and `scalability`.
 * Having one concern per component -> Meaning each piece of our architecture does only one thing and nothing else. If one component is doing more than one thing, we need to split them 
 * It is structured layered dependency. It is not specific to mobile development instead its software development architecture.
+* Clean architecture term comes from Uncle bob, He created this methodology for building software products.
+* It actually uses existing architectures like `mvvm` and other and additionally uses `use-cases` etc
+* It makes your applicaiton scalable majorly involves, how easy it is to replace a layer of application without breaking the other layers.
+* A large code base comes with challenge of structuring it which involves how easy it is to extend it, test the functions in it, understand it 
 
 ## `𝙰𝚍𝚟𝚊𝚗𝚝𝚊𝚐𝚎𝚜 𝚘𝚏 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
 * `Strict architecture` so its not easy to make mistakes.
