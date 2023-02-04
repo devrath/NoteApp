@@ -1,8 +1,21 @@
 ![cover](https://github.com/devrath/NoteApp/blob/main/Assets/banner.png)
 
 
-# NoteApp
-Creating notes and caching data which supports CRUD operations with architecture based on MVVM and clean architecture 
+<h1 align="center">𝙽𝚘𝚝𝚎𝙰𝚙𝚙</h1>
+<p align="center">
+<a><img src="https://img.shields.io/badge/Clean-Architecture-orange"></a>
+<a><img src="https://img.shields.io/badge/Room-Local--Storage-yellow"></a>
+<a><img src="https://img.shields.io/badge/Hilt-Dependency%20Injection-green"></a>
+<a><img src="https://img.shields.io/badge/MVVM-Architecture-lightgrey"></a>
+<a><img src="https://img.shields.io/badge/Navigation-Jetpack-yellowgreen"></a>
+<a><img src="https://img.shields.io/badge/Kotlin-language-green"></a>
+</p>
+
+<p align="center">𝙲𝚛𝚎𝚊𝚝𝚒𝚗𝚐 𝚗𝚘𝚝𝚎𝚜 𝚊𝚗𝚍 𝚌𝚊𝚌𝚑𝚒𝚗𝚐 𝚍𝚊𝚝𝚊 𝚠𝚑𝚒𝚌𝚑 𝚜𝚞𝚙𝚙𝚘𝚛𝚝𝚜 𝙲𝚁𝚄𝙳 𝚘𝚙𝚎𝚛𝚊𝚝𝚒𝚘𝚗𝚜 𝚠𝚒𝚝𝚑 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎 𝚋𝚊𝚜𝚎𝚍 𝚘𝚗 𝙼𝚅𝚅𝙼 𝚊𝚗𝚍 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎</p>
+</br>
+
+<p align="center">  𝚃𝚑𝚒𝚜 𝚊𝚙𝚙𝚕𝚒𝚌𝚊𝚝𝚒𝚘𝚗 𝚒𝚜 𝚋𝚞𝚒𝚕𝚝 𝚞𝚜𝚒𝚗𝚐 𝙹𝚎𝚝𝚙𝚊𝚌𝚔𝙲𝚘𝚖𝚙𝚘𝚜𝚎 𝚠𝚒𝚝𝚑 𝚖𝚟𝚟𝚖 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎. 𝙸𝚝 𝚒𝚜 𝚞𝚜𝚎𝚍 𝚝𝚘 𝚍𝚒𝚜𝚙𝚕𝚊𝚢 𝚝𝚑𝚎 𝚍𝚎𝚝𝚊𝚒𝚕𝚜 𝚘𝚏 𝚙𝚘𝚔𝚎𝚖𝚘𝚗 𝚋𝚢 𝚐𝚎𝚝𝚝𝚒𝚗𝚐 𝚝𝚑𝚎 𝚍𝚊𝚝𝚊 𝚏𝚛𝚘𝚖 𝚝𝚑𝚎 𝚜𝚎𝚛𝚟𝚎𝚛</p>
+</br>
 
 
 
