@@ -6,6 +6,7 @@ package com.istudio.notes.feature_note.domain.use_case
  * By wrapping all constructors into a single data class, we can keep the implementation cleaner.
  */
 data class NoteUseCases(
-    val getNotesUseCase: GetNotesUseCase,
-    val deleteNotesUseCase: DeleteNotesUseCase
+    val getNotesUseCase : GetNotesUseCase,
+    val deleteNotesUseCase : DeleteNotesUseCase,
+    val addNotesUseCase : AddNoteUseCase
 )
