@@ -41,30 +41,52 @@
 * `Data Layer` contains everything relevant to the data. Things like API, Local-database, Shared-Prefs.
 * `Domain Layer` is like a connecting layer, It contains the business rules like filtering a collection and also it contains definitions for repository. It also contains the model classes like entities.
 
-## `More Notes`
-**Repository**: 
-* Here in the project we have database, We use the database and call the functions of DAO in our repository.
-* The repository directly accesses our datasources, wither API or database
-* The repository takes these datasources and determine which data has to be forwarded to the corrosponding use-cases.
-* Say if you have two data sources(API,Cache), The repository needs to determine, do we load the data fro API or the cache.
-* The decesion logic of determing the choosing of data source and determining if there is any errors during this.
+## `𝙼𝚘𝚛𝚎 𝙽𝚘𝚝𝚎𝚜`
 
-**UseCases**:
-* Use-cases shouldn't know where the repository gets the data from
-* They just get the data and thats it.
+<details>
+<summary>𝚁𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚢:</summary>
+    
+* Here in the project we have database, We use the database and call the functions of DAO in our repository.</br>
+* The repository directly accesses our datasources, wither API or database.</br>
+* The repository takes these datasources and determine which data has to be forwarded to the corrosponding use-cases.</br>
+* Say if you have two data sources(API,Cache), The repository needs to determine, do we load the data fro API or the cache.</br>
+* The decesion logic of determing the choosing of data source and determining if there is any errors during this.</br>
 
-**Repository definition in domain layer**:
-* This is useful because we can create fake versions of the repository for testing
-* We can pass fake repository to use cases for testing so that use cases won't know where the data is coming from
-* Say its from a real repository or a local json file, They just get data and do something from it
+</details>
 
-**Use cases**:
-* Contains the business logic
-* Makes code very redable, Because essentially the use-case is is something that does one thing.
-* We can just know what a class does by just reading the name of the class. Ex: `DeleteNoteUseCase` determines this is used to delete a note.
-* They make code very re-usable, because in the end the `view-model` call the use-cases
-* If you implement the all the business logic in view-model and say if you need that logic in a different view model its not possible, Using a use-case overcomes this by re-using hte use-case class in a different view-model.
 
+<details>
+<summary>𝚄𝚜𝚎𝙲𝚊𝚜𝚎𝚜:</summary>
+    
+* Use-cases shouldn't know where the repository gets the data from.</br>
+* They just get the data and thats it.</br>
+* Contains the business logic.</br>
+* Makes code very redable, Because essentially the use-case is is something that does one thing.</br>
+* We can just know what a class does by just reading the name of the class. Ex: `DeleteNoteUseCase` determines this is used to delete a note.</br>
+* They make code very re-usable, because in the end the `view-model` call the use-cases.</br>
+* If you implement the all the business logic in view-model and say if you need that logic in a different view model its not possible, Using a use-case overcomes this by re-using hte use-case class in a different view-model.</br>
+
+</details>
+
+
+<details>
+<summary>𝚁𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚢 𝚍𝚎𝚏𝚒𝚗𝚒𝚝𝚒𝚘𝚗 𝚒𝚗 𝚝𝚑𝚎 𝚍𝚘𝚖𝚊𝚒𝚗 𝚕𝚊𝚢𝚎𝚛:</summary>
+    
+* This is useful because we can create fake versions of the repository for testing</br>
+* We can pass fake repository to use cases for testing so that use cases won't know where the data is coming from</br>
+* Say its from a real repository or a local json file, They just get data and do something from it</br>
+
+</details>
+
+
+<details>
+<summary>𝚅𝚒𝚎𝚠-𝙼𝚘𝚍𝚎𝚕:</summary>
+    
+* When we just use a `mvvm` architecture, we have all the business logic in the `view-model`</br>
+* But when we use `clean-architecture` in combination with `mvvm`, the business logic is lifted to `use-case` layer.</br>
+* So the view model puts some inputs to a use-case and performs some computation based on the input and gets the result and delegates the resut as a state to the presentation(UI) layer.</br>
+
+</details>
 
 
 
