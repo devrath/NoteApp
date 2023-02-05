@@ -36,10 +36,37 @@
 * `Testing` is facilitated
 
 
-## `Layers of clean architecture`
+## `𝙻𝚊𝚢𝚎𝚛𝚜 𝚘𝚏 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
 * `Presentation Layer` contains the UI that we present to the user.
 * `Data Layer` contains everything relevant to the data. Things like API, Local-database, Shared-Prefs.
 * `Domain Layer` is like a connecting layer, It contains the business rules like filtering a collection and also it contains definitions for repository. It also contains the model classes like entities.
+
+## `More Notes`
+**Repository**: 
+* Here in the project we have database, We use the database and call the functions of DAO in our repository.
+* The repository directly accesses our datasources, wither API or database
+* The repository takes these datasources and determine which data has to be forwarded to the corrosponding use-cases.
+* Say if you have two data sources(API,Cache), The repository needs to determine, do we load the data fro API or the cache.
+* The decesion logic of determing the choosing of data source and determining if there is any errors during this.
+
+**UseCases**:
+* Use-cases shouldn't know where the repository gets the data from
+* They just get the data and thats it.
+
+**Repository definition in domain layer**:
+* This is useful because we can create fake versions of the repository for testing
+* We can pass fake repository to use cases for testing so that use cases won't know where the data is coming from
+* Say its from a real repository or a local json file, They just get data and do something from it
+
+**Use cases**:
+* Contains the business logic
+* Makes code very redable, Because essentially the use-case is is something that does one thing.
+* We can just know what a class does by just reading the name of the class. Ex: `DeleteNoteUseCase` determines this is used to delete a note.
+* They make code very re-usable, because in the end the `view-model` call the use-cases
+* If you implement the all the business logic in view-model and say if you need that logic in a different view model its not possible, Using a use-case overcomes this by re-using hte use-case class in a different view-model.
+
+
+
 
 
 ## **`𝙿𝚊𝚌𝚔𝚊𝚐𝚎 𝚂𝚝𝚛𝚞𝚌𝚝𝚞𝚛𝚎 𝚒𝚗 𝚝𝚑𝚎 𝚙𝚛𝚘𝚓𝚎𝚌𝚝`** :package:
