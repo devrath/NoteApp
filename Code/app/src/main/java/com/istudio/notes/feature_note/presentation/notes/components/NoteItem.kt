@@ -42,7 +42,7 @@ fun NoteItem(
             .clip(shape = RoundedCornerShape(cornerRadius))
             .background(MaterialTheme.colors.background)
             .fillMaxWidth()
-            .height(100.dp)
+            .height(210.dp)
             .padding(10.dp)
     ) {
         Row(
@@ -57,12 +57,14 @@ fun NoteItem(
                 Text(
                     modifier = modifier.padding(bottom = 5.dp),
                     text = note.title,
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
+                    style = MaterialTheme.typography.h6,
+                    color = MaterialTheme.colors.onSurface,
+                    maxLines = 1
                 )
                 Text(
                     text = note.content,
-                    fontSize = 12.sp,
+                    style = MaterialTheme.typography.body1,
+                    color = MaterialTheme.colors.onSurface,
                     maxLines = 8,
                     overflow = TextOverflow.Ellipsis
                 )
