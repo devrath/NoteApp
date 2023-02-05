@@ -1,9 +1,8 @@
 package com.istudio.notes.feature_note.data.data_source
 
-import android.database.sqlite.SQLiteDatabase
-import android.provider.ContactsContract.CommonDataKinds.Note
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import com.istudio.notes.feature_note.domain.model.Note
 
 @Database(
     entities = [Note::class],

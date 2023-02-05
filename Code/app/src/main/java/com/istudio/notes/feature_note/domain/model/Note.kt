@@ -10,13 +10,12 @@ import com.istudio.notes.ui.theme.Violet
 
 @Entity
 data class Note(
-    @PrimaryKey val id : Int? = null,
-    val title : String,
-    val content : String,
-    val timestamp : Long,
-    val color : Int,
-){
-    companion object{
+    val title: String,
+    val content: String,
+    val timestamp: Long,
+    @PrimaryKey val id: Int? = null
+) {
+    companion object {
         val noteColors = listOf(RedOrange, LightGreen, Violet, BabyBlue, RedPink)
     }
 }
