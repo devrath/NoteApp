@@ -11,8 +11,12 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -34,7 +38,8 @@ import com.istudio.notes.feature_note.domain.model.Note
 fun NoteItem(
     note: Note,
     modifier: Modifier = Modifier,
-    cornerRadius : Dp = 10.dp
+    cornerRadius : Dp = 10.dp,
+    onDeleteClick: () -> Unit
 ) {
 
     Box(
@@ -75,13 +80,17 @@ fun NoteItem(
                 verticalArrangement = Arrangement.Bottom,
                 horizontalAlignment = Alignment.Start
             ) {
-
-                Image(
-                    painter = painterResource(id = R.drawable.ic_delete),
-                    contentDescription = stringResource(id = R.string.str_delete)
-                )
+                IconButton(
+                    onClick = onDeleteClick,
+                    modifier = Modifier
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Delete,
+                        contentDescription = stringResource(id = R.string.str_delete),
+                        tint = MaterialTheme.colors.onSurface
+                    )
+                }
             }
-
         }
     }
 
@@ -97,6 +106,6 @@ private fun CurrentScreen() {
             content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             timestamp = 20
         )
-    )
+    ){}
 }
 

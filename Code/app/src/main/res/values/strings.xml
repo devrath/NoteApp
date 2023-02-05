@@ -5,4 +5,9 @@
     <string name="str_delete">Delete</string>
     <string name="str_ascending">Ascending</string>
     <string name="str_descending">Descending</string>
+    <string name="str_add_note">Add Note</string>
+    <string name="str_your_note">Your Note</string>
+    <string name="str_sort">Sort</string>
+    <string name="str_note_deleted">Note deleted</string>
+    <string name="str_undo">Undo</string>
 </resources>
