@@ -37,9 +37,10 @@
 
 
 ## `𝙻𝚊𝚢𝚎𝚛𝚜 𝚘𝚏 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
-* `Presentation Layer` contains the UI that we present to the user.
-* `Data Layer` contains everything relevant to the data. Things like API, Local-database, Shared-Prefs.
-* `Domain Layer` is like a connecting layer, It contains the business rules like filtering a collection and also it contains definitions for repository. It also contains the model classes like entities.
+| `Presentation Layer` | `Data Layer` | `Domain Layer` |
+| -------------------- | ------------ | -------------- |
+| UI that we present to the user | • Everything relevant to the data.</br> • Things like API, Local-database, Shared-Prefs | • It is like a connecting layer. </br> • It contains the business rules like filtering a collection and also it contains definitions for repository.</br> • vIt also contains the model classes like entities |
+
 
 ## `𝙼𝚘𝚛𝚎 𝙽𝚘𝚝𝚎𝚜`
 
