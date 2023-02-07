@@ -1,5 +1,6 @@
 package com.istudio.notes.feature_note.presentation.edit_note
 
+import android.graphics.fonts.FontFamily
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -19,7 +20,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.istudio.notes.feature_note.presentation.edit_note.components.TransparentHintTextField
@@ -73,7 +78,7 @@ fun AddEditNoteScreen(
            Column(
                modifier = Modifier
                    .fillMaxSize()
-                   .background(MaterialTheme.colors.onSurface)
+                   .background(MaterialTheme.colors.surface)
                    .padding(16.dp)
            ) {
                Spacer(modifier = Modifier.height(16.dp))
@@ -88,7 +93,11 @@ fun AddEditNoteScreen(
                    },
                    isHintVisible = titleState.isHintVisible,
                    singleLine = true,
-                   textStyle = MaterialTheme.typography.h5
+                   textStyle = TextStyle(
+                       color = MaterialTheme.colors.onPrimary,
+                       fontSize = 28.sp,
+                       textAlign = TextAlign.Start
+                   )
                )
                Spacer(modifier = Modifier.height(16.dp))
                TransparentHintTextField(
@@ -101,7 +110,11 @@ fun AddEditNoteScreen(
                        viewModel.onEvent(AddEditNoteEvent.ChangeContentFocus(it))
                    },
                    isHintVisible = contentState.isHintVisible,
-                   textStyle = MaterialTheme.typography.body1,
+                   textStyle = TextStyle(
+                       color = MaterialTheme.colors.onPrimary,
+                       fontSize = 14.sp,
+                       textAlign = TextAlign.Start
+                   ),
                    modifier = Modifier.fillMaxHeight()
                )
            }

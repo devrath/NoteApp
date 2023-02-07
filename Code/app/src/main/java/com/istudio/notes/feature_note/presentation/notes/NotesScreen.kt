@@ -82,7 +82,7 @@ fun NotesScreen(
                     Text(
                         text = "Your notes",
                         style = MaterialTheme.typography.h4,
-                        color = MaterialTheme.colors.onSecondary
+                        color = MaterialTheme.colors.secondary
                     )
                 }
 
