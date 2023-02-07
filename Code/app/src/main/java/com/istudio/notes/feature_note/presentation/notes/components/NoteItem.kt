@@ -6,7 +6,9 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -45,52 +47,43 @@ fun NoteItem(
     Box(
         modifier = modifier
             .clip(shape = RoundedCornerShape(cornerRadius))
-            .background(MaterialTheme.colors.background)
+            .background(MaterialTheme.colors.onSurface)
             .fillMaxWidth()
             .height(210.dp)
             .padding(10.dp)
     ) {
-        Row(
-            modifier = modifier.fillMaxWidth()
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp)
+                .padding(end = 32.dp)
         ) {
-
-            Column(
-                modifier = modifier.weight(1F, fill = true),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.Start
-            ) {
-                Text(
-                    modifier = modifier.padding(bottom = 5.dp),
-                    text = note.title,
-                    style = MaterialTheme.typography.h6,
-                    color = MaterialTheme.colors.onSurface,
-                    maxLines = 1
-                )
-                Text(
-                    text = note.content,
-                    style = MaterialTheme.typography.body1,
-                    color = MaterialTheme.colors.onSurface,
-                    maxLines = 8,
-                    overflow = TextOverflow.Ellipsis
-                )
-            }
-
-            Column(
-                modifier = modifier.fillMaxHeight().padding(start = 10.dp),
-                verticalArrangement = Arrangement.Bottom,
-                horizontalAlignment = Alignment.Start
-            ) {
-                IconButton(
-                    onClick = onDeleteClick,
-                    modifier = Modifier
-                ) {
-                    Icon(
-                        imageVector = Icons.Default.Delete,
-                        contentDescription = stringResource(id = R.string.str_delete),
-                        tint = MaterialTheme.colors.onSurface
-                    )
-                }
-            }
+            Text(
+                text = note.title,
+                style = MaterialTheme.typography.h6,
+                color = MaterialTheme.colors.onPrimary,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = note.content,
+                style = MaterialTheme.typography.body1,
+                color = MaterialTheme.colors.onPrimary,
+                maxLines = 10,
+                overflow = TextOverflow.Ellipsis
+            )
+        }
+        IconButton(
+            onClick = onDeleteClick,
+            modifier = Modifier.align(Alignment.BottomEnd)
+        ) {
+            Icon(
+                imageVector = Icons.Default.Delete,
+                contentDescription = "Delete note",
+                tint = MaterialTheme.colors.onSurface
+            )
         }
     }
 
