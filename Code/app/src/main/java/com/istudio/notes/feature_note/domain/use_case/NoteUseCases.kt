@@ -8,5 +8,6 @@ package com.istudio.notes.feature_note.domain.use_case
 data class NoteUseCases(
     val getNotesUseCase : GetNotesUseCase,
     val deleteNotesUseCase : DeleteNotesUseCase,
-    val addNotesUseCase : AddNoteUseCase
+    val addNotesUseCase : AddNoteUseCase,
+    val getNoteUseCase : GetNoteUseCase,
 )
