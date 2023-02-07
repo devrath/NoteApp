@@ -60,6 +60,7 @@ fun AddEditNoteScreen(
     }
 
     Scaffold(
+        modifier = Modifier.fillMaxSize(),
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
@@ -73,7 +74,7 @@ fun AddEditNoteScreen(
         scaffoldState = scaffoldState
     ) {
        Box(
-           modifier = Modifier.padding(it)
+           modifier = Modifier.padding(it).fillMaxSize()
        ) {
            Column(
                modifier = Modifier
@@ -115,7 +116,7 @@ fun AddEditNoteScreen(
                        fontSize = 14.sp,
                        textAlign = TextAlign.Start
                    ),
-                   modifier = Modifier.fillMaxHeight()
+                   modifier = Modifier.fillMaxHeight().weight(1F)
                )
            }
        }
