@@ -1,6 +1,7 @@
 package com.istudio.notes.feature_note.presentation.edit_note
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -59,47 +60,51 @@ fun AddEditNoteScreen(
                 onClick = {
                     viewModel.onEvent(AddEditNoteEvent.SaveNote)
                 },
-                backgroundColor = MaterialTheme.colors.primary
+                backgroundColor = MaterialTheme.colors.secondaryVariant
             ) {
                 Icon(imageVector = Icons.Default.Done, contentDescription = "Save note")
             }
         },
         scaffoldState = scaffoldState
     ) {
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(MaterialTheme.colors.background)
-                .padding(paddingValues = it)
-        ) {
-            Spacer(modifier = Modifier.height(16.dp))
-            TransparentHintTextField(
-                text = titleState.text,
-                hint = titleState.hint,
-                onValueChange = {
-                    viewModel.onEvent(AddEditNoteEvent.EnteredTitle(it))
-                },
-                onFocusChange = {
-                    viewModel.onEvent(AddEditNoteEvent.ChangeTitleFocus(it))
-                },
-                isHintVisible = titleState.isHintVisible,
-                singleLine = true,
-                textStyle = MaterialTheme.typography.h5
-            )
-            Spacer(modifier = Modifier.height(16.dp))
-            TransparentHintTextField(
-                text = contentState.text,
-                hint = contentState.hint,
-                onValueChange = {
-                    viewModel.onEvent(AddEditNoteEvent.EnteredContent(it))
-                },
-                onFocusChange = {
-                    viewModel.onEvent(AddEditNoteEvent.ChangeContentFocus(it))
-                },
-                isHintVisible = contentState.isHintVisible,
-                textStyle = MaterialTheme.typography.body1,
-                modifier = Modifier.fillMaxHeight()
-            )
-        }
+       Box(
+           modifier = Modifier.padding(it)
+       ) {
+           Column(
+               modifier = Modifier
+                   .fillMaxSize()
+                   .background(MaterialTheme.colors.onSurface)
+                   .padding(16.dp)
+           ) {
+               Spacer(modifier = Modifier.height(16.dp))
+               TransparentHintTextField(
+                   text = titleState.text,
+                   hint = titleState.hint,
+                   onValueChange = {
+                       viewModel.onEvent(AddEditNoteEvent.EnteredTitle(it))
+                   },
+                   onFocusChange = {
+                       viewModel.onEvent(AddEditNoteEvent.ChangeTitleFocus(it))
+                   },
+                   isHintVisible = titleState.isHintVisible,
+                   singleLine = true,
+                   textStyle = MaterialTheme.typography.h5
+               )
+               Spacer(modifier = Modifier.height(16.dp))
+               TransparentHintTextField(
+                   text = contentState.text,
+                   hint = contentState.hint,
+                   onValueChange = {
+                       viewModel.onEvent(AddEditNoteEvent.EnteredContent(it))
+                   },
+                   onFocusChange = {
+                       viewModel.onEvent(AddEditNoteEvent.ChangeContentFocus(it))
+                   },
+                   isHintVisible = contentState.isHintVisible,
+                   textStyle = MaterialTheme.typography.body1,
+                   modifier = Modifier.fillMaxHeight()
+               )
+           }
+       }
     }
 }

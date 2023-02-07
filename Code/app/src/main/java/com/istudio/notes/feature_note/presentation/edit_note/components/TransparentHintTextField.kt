@@ -3,6 +3,7 @@ package com.istudio.notes.feature_note.presentation.edit_note.components
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.text.BasicTextField
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -37,7 +38,7 @@ fun TransparentHintTextField(
                 }
         )
         if(isHintVisible) {
-            Text(text = hint, style = textStyle, color = Color.DarkGray)
+            Text(text = hint, style = textStyle, color = MaterialTheme.colors.onPrimary)
         }
     }
 }

@@ -47,7 +47,7 @@ fun NoteItem(
     Box(
         modifier = modifier
             .clip(shape = RoundedCornerShape(cornerRadius))
-            .background(MaterialTheme.colors.onSurface)
+            .background(MaterialTheme.colors.surface)
             .fillMaxWidth()
             .height(210.dp)
             .padding(10.dp)
@@ -82,7 +82,7 @@ fun NoteItem(
             Icon(
                 imageVector = Icons.Default.Delete,
                 contentDescription = "Delete note",
-                tint = MaterialTheme.colors.onSurface
+                tint = MaterialTheme.colors.onPrimary
             )
         }
     }
