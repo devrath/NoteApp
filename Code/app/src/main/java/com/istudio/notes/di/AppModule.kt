@@ -7,6 +7,7 @@ import com.istudio.notes.feature_note.data.repository.NoteRepositoryImpl
 import com.istudio.notes.feature_note.domain.respository.NoteRepository
 import com.istudio.notes.feature_note.domain.use_case.AddNoteUseCase
 import com.istudio.notes.feature_note.domain.use_case.DeleteNotesUseCase
+import com.istudio.notes.feature_note.domain.use_case.GetNoteUseCase
 import com.istudio.notes.feature_note.domain.use_case.GetNotesUseCase
 import com.istudio.notes.feature_note.domain.use_case.NoteUseCases
 import dagger.Module
@@ -30,6 +31,7 @@ object AppModule {
             getNotesUseCase = GetNotesUseCase(repository),
             deleteNotesUseCase = DeleteNotesUseCase(repository),
             addNotesUseCase = AddNoteUseCase(repository),
+            getNoteUseCase = GetNoteUseCase(repository)
         )
     }
 
