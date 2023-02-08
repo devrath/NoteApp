@@ -39,11 +39,9 @@
 
 ## `𝙻𝚊𝚢𝚎𝚛𝚜 𝚘𝚏 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
 
-|      `Layer`     |
-| ---------------- |
-| <img src="https://github.com/devrath/NoteApp/blob/main/Assets/presentation_note.drawio.png" width="450" height="450"/> |
-| <img src="https://github.com/devrath/NoteApp/blob/main/Assets/domain_note.drawio.png" width="450" height="450"/> |
-| <img src="https://github.com/devrath/NoteApp/blob/main/Assets/data_note.drawio.png" width="450" height="450"/> |
+|      `Presentation`     |     `Domain`     |     `Data`     |
+| ----------------------- | ---------------- | -------------- |
+| <img src="https://github.com/devrath/NoteApp/blob/main/Assets/presentation_note.drawio.png" width="300" height="300"/> | <img src="https://github.com/devrath/NoteApp/blob/main/Assets/domain_note.drawio.png" width="300" height="300"/> | <img src="https://github.com/devrath/NoteApp/blob/main/Assets/data_note.drawio.png" width="300" height="300"/> |
 
 
 
