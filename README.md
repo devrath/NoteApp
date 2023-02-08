@@ -28,12 +28,14 @@
 * A large code base comes with challenge of structuring it which involves how easy it is to extend it, test the functions in it, understand it 
 
 ## `𝙰𝚍𝚟𝚊𝚗𝚝𝚊𝚐𝚎𝚜 𝚘𝚏 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
-* `Strict architecture` so its not easy to make mistakes.
-* `Business logic is encapsulated` so its to use and test.
-* `Parallel` development.
-* `Highly scalable` so we can grow a small project into a large one without bumping into problems.
-* `Easy` to understand and maintain.
-* `Testing` is facilitated
+| **`Advantages`**      | **`How its useful`**                                                                            |
+| --------------------- | ----------------------------------------------------------------------------------------------- |
+| `Strict architecture` | Because of how the layers of code are organized it is not easy to make mistakes                 |
+| `Encapsulation`       | Each layer is organized into its own part having its own responsibility                         |
+| `Parallel development`| If we have each feature in module wise each of the modules are built parallely                  |
+| `Highly scalable`     | Once organized properly, we can grow a small project into large one without bumping to problems |
+| `Simple and easy`     | Due to single responsibility its way easier to understand each snipped of code on what it does  |
+| `Testing`             | Since all the layers are decoupled, we can write unit tests on them easily                      |
 
 
 ## `𝙻𝚊𝚢𝚎𝚛𝚜 𝚘𝚏 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
