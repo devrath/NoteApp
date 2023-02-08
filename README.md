@@ -37,9 +37,8 @@
 | `Testing`             | Since all the layers are decoupled, we can write unit tests on them easily                      |
 
 
-## `𝙻𝚊𝚢𝚎𝚛𝚜 𝚘𝚏 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
+## `𝙻𝚊𝚢𝚎𝚛𝚜 𝚘𝚏 𝚙𝚛𝚘𝚓𝚎𝚌𝚝 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
 ![architecture-layers](https://github.com/devrath/NoteApp/blob/main/Assets/diagram_Notes.drawio.png)
-
 
 
 ## `𝙼𝚘𝚛𝚎 𝙽𝚘𝚝𝚎𝚜`
