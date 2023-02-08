@@ -18,8 +18,7 @@
 ![architecture](https://github.com/devrath/NoteApp/blob/main/Assets/architecture_note.drawio.png)
 
 ## `𝚆𝚑𝚊𝚝 𝚒𝚜 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
-* Its a way to organize the project to achieve `maintainability` and `scalability`.
-* Having one concern per component -> Meaning each piece of our architecture does only one thing and nothing else. If one component is doing more than one thing, we need to split them 
+* Having one concern per component, Meaning each piece of our architecture does only one thing and nothing else. If one component is doing more than one thing, we need to split them 
 * It is structured layered dependency. It is not specific to mobile development instead its software development architecture.
 * Clean architecture term comes from Uncle bob, He created this methodology for building software products.
 * It actually uses existing architectures like `mvvm` and other and additionally uses `use-cases` etc
