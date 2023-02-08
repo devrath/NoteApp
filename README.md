@@ -15,7 +15,7 @@
 </br>
 
 ## **`𝙰𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`** 🎈
-![architecture](https://github.com/devrath/NoteApp/blob/main/Assets/diagramNotes.drawio.png)
+![architecture](https://github.com/devrath/NoteApp/blob/main/Assets/diagram_Notes.drawio.png)
 
 ## `𝚆𝚑𝚊𝚝 𝚒𝚜 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
 * Its a way to organize the project to achieve `maintainability` and `scalability`.
@@ -38,9 +38,13 @@
 
 
 ## `𝙻𝚊𝚢𝚎𝚛𝚜 𝚘𝚏 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
-| `Presentation Layer` | `Data Layer` | `Domain Layer` |
-| -------------------- | ------------ | -------------- |
-| UI that we present to the user | • Everything relevant to the data.</br> • Things like API, Local-database, Shared-Prefs | • It is like a connecting layer. </br> • It contains the business rules like filtering a collection and also it contains definitions for repository.</br> • vIt also contains the model classes like entities |
+
+|      `Presentation`     |     `Domain`     |     `Data`     |
+| ----------------------- | ---------------- | -------------- |
+| <img src="https://github.com/devrath/NoteApp/blob/main/Assets/presentation_note.drawio.png" width="300" height="300"/> | <img src="https://github.com/devrath/NoteApp/blob/main/Assets/domain_note.drawio.png" width="300" height="300"/> | <img src="https://github.com/devrath/NoteApp/blob/main/Assets/data_note.drawio.png" width="300" height="300"/> |
+
+
+
 
 
 ## `𝙼𝚘𝚛𝚎 𝙽𝚘𝚝𝚎𝚜`
