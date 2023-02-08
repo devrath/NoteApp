@@ -15,7 +15,7 @@
 </br>
 
 ## **`𝙰𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`** 🎈
-![architecture](https://github.com/devrath/NoteApp/blob/main/Assets/diagramNotes.drawio.png)
+![architecture](https://github.com/devrath/NoteApp/blob/main/Assets/diagram_Notes.drawio.png)
 
 ## `𝚆𝚑𝚊𝚝 𝚒𝚜 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
 * Its a way to organize the project to achieve `maintainability` and `scalability`.
