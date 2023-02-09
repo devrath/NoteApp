@@ -35,6 +35,52 @@
 | `Simple and easy`     | Due to single responsibility its way easier to understand each snipped of code on what it does  |
 | `Testing`             | Since all the layers are decoupled, we can write unit tests on them easily                      |
 
+## `𝚂𝙾𝙻𝙸𝙳 - 𝚙𝚛𝚒𝚗𝚌𝚒𝚙𝚕𝚎𝚜`
+
+<details>
+<summary>𝚂𝚒𝚗𝚐𝚕𝚎 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚒𝚋𝚒𝚕𝚒𝚝𝚢 𝚙𝚛𝚒𝚗𝚌𝚒𝚙𝚕𝚎</summary>
+    
+* A class should have only one job.</br>
+* A class should have only one reason to change.</br>
+* If the class has two reasons to change, Then the class has to be split up into two components.</br>
+
+</details>
+
+<details>
+<summary>𝙾𝚙𝚎𝚗 𝙲𝚕𝚘𝚜𝚎𝚍 𝚙𝚛𝚒𝚗𝚌𝚒𝚙𝚕𝚎</summary>
+    
+* It should be open for extension, but closed for modification.</br>
+* If new functionality needs to be added, it should be added as an extension of the class.</br>
+* This allows us to abstract the stable functionality.</br>
+* If functionality is working and stable and we add a new feature on top of the existing feature for it. Now we will have stable functionality always working.</br>
+* Thus the volatile functionality will be in the extended classes and the stable functionality in the extended classes.</br>
+</details>
+
+<details>
+
+<summary>𝙻𝚒𝚜𝚔𝚘𝚟 𝚜𝚞𝚋𝚜𝚝𝚒𝚝𝚞𝚝𝚒𝚘𝚗 𝚙𝚛𝚒𝚗𝚌𝚒𝚙𝚕𝚎</summary>
+    
+* Lower level classes can be substituted without affecting higher levels.</br>
+* This is achieved using abstract classes and interfaces.</br>
+
+</details>
+
+<summary>𝙸𝚗𝚝𝚎𝚛𝚏𝚊𝚌𝚎 𝚜𝚎𝚐𝚛𝚎𝚐𝚊𝚝𝚒𝚘𝚗 𝚙𝚛𝚒𝚗𝚌𝚒𝚙𝚕𝚎</summary>
+    
+* We use an interface to advertise the functionality.</br>
+* Many specific interfaces are better than a generic interface.</br>
+* Interface just exposes the methods the dependent classes needed and nothing else.</br>
+
+</details>
+
+<summary>𝙳𝚎𝚙𝚎𝚗𝚍𝚎𝚗𝚌𝚢 𝚒𝚗𝚟𝚎𝚛𝚜𝚒𝚘𝚗 𝚙𝚛𝚒𝚗𝚌𝚒𝚙𝚕𝚎</summary>
+    
+* Concrete classes depend on abstract classes and not the other way around.</br>
+* Volatile and stable functionalities are encapsulated, having the dependency relationship between the two.</br>
+* Framework-specific functionality depends on business logic with a dependency between them.</br>
+
+</details>
+
 
 ## `𝙻𝚊𝚢𝚎𝚛𝚜 𝚘𝚏 𝚙𝚛𝚘𝚓𝚎𝚌𝚝 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
 ![architecture-layers](https://github.com/devrath/NoteApp/blob/main/Assets/diagram_Notes.drawio.png)
