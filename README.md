@@ -57,14 +57,13 @@
 </details>
 
 <details>
-
 <summary>𝙻𝚒𝚜𝚔𝚘𝚟 𝚜𝚞𝚋𝚜𝚝𝚒𝚝𝚞𝚝𝚒𝚘𝚗 𝚙𝚛𝚒𝚗𝚌𝚒𝚙𝚕𝚎</summary>
     
 * Lower level classes can be substituted without affecting higher levels.</br>
 * This is achieved using abstract classes and interfaces.</br>
-
 </details>
 
+<details>
 <summary>𝙸𝚗𝚝𝚎𝚛𝚏𝚊𝚌𝚎 𝚜𝚎𝚐𝚛𝚎𝚐𝚊𝚝𝚒𝚘𝚗 𝚙𝚛𝚒𝚗𝚌𝚒𝚙𝚕𝚎</summary>
     
 * We use an interface to advertise the functionality.</br>
@@ -73,6 +72,7 @@
 
 </details>
 
+<details>
 <summary>𝙳𝚎𝚙𝚎𝚗𝚍𝚎𝚗𝚌𝚢 𝚒𝚗𝚟𝚎𝚛𝚜𝚒𝚘𝚗 𝚙𝚛𝚒𝚗𝚌𝚒𝚙𝚕𝚎</summary>
     
 * Concrete classes depend on abstract classes and not the other way around.</br>
