@@ -132,7 +132,15 @@
     │   └──-------------------------------------------------------> ApplicationClass                
     
 
-
+## `Modes`
+### `𝙳𝚊𝚛𝚔 𝙼𝚘𝚍𝚎`🌚
+| **`𝙽𝚘𝚝𝚎𝚜 𝙻𝚒𝚜𝚝`** | **`𝚅𝚒𝚎𝚠 𝙽𝚘𝚝𝚎`** | **`𝙴𝚍𝚒𝚝 𝚗𝚘𝚝𝚎`** |
+| ---------------- | --------------- | --------------- |
+| <img src="https://github.com/devrath/NoteApp/blob/main/Assets/outputs/dark_notes.jpg" width="160" height="330"/> | <img src="https://github.com/devrath/NoteApp/blob/main/Assets/outputs/dark_note.jpg" width="160" height="330"/> | <img src="https://github.com/devrath/NoteApp/blob/main/Assets/outputs/dark_notes_edit.jpg" width="160" height="330"/> |
+### `𝙻𝚒𝚐𝚑𝚝 𝙼𝚘𝚍𝚎`🌞
+| **`𝙽𝚘𝚝𝚎𝚜 𝙻𝚒𝚜𝚝`** | **`𝚅𝚒𝚎𝚠 𝙽𝚘𝚝𝚎`** | **`𝙴𝚍𝚒𝚝 𝚗𝚘𝚝𝚎`** |
+| ---------------- | --------------- | --------------- |
+| <img src="https://github.com/devrath/NoteApp/blob/main/Assets/outputs/light_notes.jpg" width="160" height="330"/> | <img src="https://github.com/devrath/NoteApp/blob/main/Assets/outputs/light_note.jpg" width="160" height="330"/> | <img src="https://github.com/devrath/NoteApp/blob/main/Assets/outputs/light_notes_edit.jpg" width="160" height="330"/> |
 
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
