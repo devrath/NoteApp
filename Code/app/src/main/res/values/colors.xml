@@ -24,5 +24,7 @@
     <!-- Material colors -->
 
     <color name="deleteBin">#FF000000</color>
+    <color name="splashIconColor">@color/white</color>
+    <color name="splashBackground">#FF34495E</color>
 
 </resources>
