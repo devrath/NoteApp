@@ -11,15 +11,14 @@
 <a><img src="https://img.shields.io/badge/Kotlin-language-green"></a>
 </p>
 
-<p align="center">𝙲𝚛𝚎𝚊𝚝𝚒𝚗𝚐 𝚗𝚘𝚝𝚎𝚜 𝚊𝚗𝚍 𝚌𝚊𝚌𝚑𝚒𝚗𝚐 𝚍𝚊𝚝𝚊 𝚠𝚑𝚒𝚌𝚑 𝚜𝚞𝚙𝚙𝚘𝚛𝚝𝚜 𝙲𝚁𝚄𝙳 𝚘𝚙𝚎𝚛𝚊𝚝𝚒𝚘𝚗𝚜 𝚠𝚒𝚝𝚑 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎 𝚋𝚊𝚜𝚎𝚍 𝚘𝚗 𝙼𝚅𝚅𝙼 𝚊𝚗𝚍 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎</p>
+<p align="center">𝚃𝚑𝚒𝚜 𝚙𝚛𝚘𝚓𝚎𝚌𝚝 𝚒𝚜 𝚊 𝚜𝚒𝚖𝚙𝚕𝚎 𝚗𝚘𝚝𝚎 𝚊𝚙𝚙𝚕𝚒𝚌𝚊𝚝𝚒𝚘𝚗, 𝚆𝚑𝚎𝚛𝚎 𝚊 𝚞𝚜𝚎𝚛 𝚌𝚊𝚗 𝚌𝚛𝚎𝚊𝚝𝚎 𝚗𝚘𝚝𝚎𝚜, 𝙼𝚘𝚍𝚒𝚏𝚢 𝚝𝚑𝚎 𝚎𝚡𝚒𝚜𝚝𝚒𝚗𝚐 𝚗𝚘𝚝𝚎𝚜 𝚊𝚗𝚍 𝙳𝚎𝚕𝚎𝚝𝚎 𝚎𝚡𝚒𝚜𝚝𝚒𝚗𝚐 𝚗𝚘𝚝𝚎𝚜 𝚜𝚞𝚙𝚙𝚘𝚛𝚝𝚒𝚗𝚐 𝚊𝚕𝚕 𝚝𝚑𝚎 𝙲𝚁𝚄𝙳 𝚘𝚙𝚎𝚛𝚊𝚝𝚒𝚘𝚗𝚜. 𝚃𝚑𝚎 𝚗𝚘𝚝𝚎𝚜 𝚊𝚛𝚎 𝚌𝚊𝚌𝚑𝚎𝚍 𝚘𝚗 𝚝𝚑𝚎 𝚍𝚎𝚟𝚒𝚌𝚎, 𝙱𝚞𝚒𝚕𝚝 𝚘𝚗 𝚊𝚗 𝙼𝚅𝚅𝙼-𝚋𝚊𝚜𝚎𝚍 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎, 𝚊𝚗𝚍 𝚌𝚘𝚖𝚙𝚘𝚜𝚎 𝚊𝚜 𝚝𝚑𝚎 𝚙𝚛𝚎𝚜𝚎𝚗𝚝𝚊𝚝𝚒𝚘𝚗 𝚕𝚊𝚢𝚎𝚛</p>
 </br>
 
-## **`𝙰𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`** 🎈
-![architecture](https://github.com/devrath/NoteApp/blob/main/Assets/diagram_Notes.drawio.png)
+## **`𝙲𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`** 🎈
+![architecture](https://github.com/devrath/NoteApp/blob/main/Assets/architecture_note.drawio.png)
 
 ## `𝚆𝚑𝚊𝚝 𝚒𝚜 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
-* Its a way to organize the project to achieve `maintainability` and `scalability`.
-* Having one concern per component -> Meaning each piece of our architecture does only one thing and nothing else. If one component is doing more than one thing, we need to split them 
+* Having one concern per component, Meaning each piece of our architecture does only one thing and nothing else. If one component is doing more than one thing, we need to split them 
 * It is structured layered dependency. It is not specific to mobile development instead its software development architecture.
 * Clean architecture term comes from Uncle bob, He created this methodology for building software products.
 * It actually uses existing architectures like `mvvm` and other and additionally uses `use-cases` etc
@@ -37,14 +36,8 @@
 | `Testing`             | Since all the layers are decoupled, we can write unit tests on them easily                      |
 
 
-## `𝙻𝚊𝚢𝚎𝚛𝚜 𝚘𝚏 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
-
-|      `Presentation`     |     `Domain`     |     `Data`     |
-| ----------------------- | ---------------- | -------------- |
-| <img src="https://github.com/devrath/NoteApp/blob/main/Assets/presentation_note.drawio.png" width="300" height="300"/> | <img src="https://github.com/devrath/NoteApp/blob/main/Assets/domain_note.drawio.png" width="300" height="300"/> | <img src="https://github.com/devrath/NoteApp/blob/main/Assets/data_note.drawio.png" width="300" height="300"/> |
-
-
-
+## `𝙻𝚊𝚢𝚎𝚛𝚜 𝚘𝚏 𝚙𝚛𝚘𝚓𝚎𝚌𝚝 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
+![architecture-layers](https://github.com/devrath/NoteApp/blob/main/Assets/diagram_Notes.drawio.png)
 
 
 ## `𝙼𝚘𝚛𝚎 𝙽𝚘𝚝𝚎𝚜`
