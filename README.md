@@ -15,7 +15,7 @@
 </br>
 
 ## **`𝙲𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`** 🎈
-![architecture](https://github.com/devrath/NoteApp/blob/main/Assets/architecture_note.drawio.png)
+![architecture](https://github.com/devrath/NoteApp/blob/main/Assets/arc_note.drawio.png)
 
 ## `𝚆𝚑𝚊𝚝 𝚒𝚜 𝚌𝚕𝚎𝚊𝚗 𝚊𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎`
 * Having one concern per component, Meaning each piece of our architecture does only one thing and nothing else. If one component is doing more than one thing, we need to split them 
